@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Kegiatan Kampus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kegiatan Kampus</h1>
+        <nav>
+            <a href="#tentang">Tentang</a>
+            <a href="#rundown">Rundown</a>
+            <a href="#daftar">Daftar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tentang">
+           <img src="images/kegiatan.jpg" alt="Dokumentasi kegiatan mahasiswa di kampus">
+
+            <div>
+                <h2>Tentang Kegiatan</h2>
+                <p>Kegiatan kampus merupakan kegiatan untuk meningkatkan kemampuan mahasiswa agar lebih <strong>aktif</strong> dan <em>kreatif</em>.</p>
+                <a href="https://www.kemdikbud.go.id" target="_blank" rel="noreferrer">Lihat Panduan Kegiatan</a>
+            </div>
+        </section>
+
+        <section id="rundown">
+            <div>
+                <h2>Syarat Peserta</h2>
+                <ul>
+                    <li>Mahasiswa aktif</li>
+                    <li>Mengisi formulir pendaftaran</li>
+                    <li>Bersedia mengikuti kegiatan</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Alur Pendaftaran</h2>
+                <ol>
+                    <li>Isi data diri</li>
+                    <li>Verifikasi data</li>
+                    <li>Kirim pendaftaran</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="daftar">
+            <h2>Formulir Pendaftaran</h2>
+
+            <form action="#" method="post">
+                <label for="nama">Nama Lengkap</label>
+                <input id="nama" name="nama" type="text" required>
+
+                <label for="surel">Alamat Surel</label>
+                <input id="surel" name="surel" type="email" required>
+
+                <label for="tanggal">Tanggal Lahir</label>
+                <input id="tanggal" name="tanggal" type="date">
+
+                <label for="divisi">Pilihan Divisi</label>
+                <select id="divisi" name="divisi">
+                    <option value="">Pilih Divisi</option>
+                    <option value="acara">Acara</option>
+                    <option value="humas">Humas</option>
+                    <option value="perlengkapan">Perlengkapan</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="persetujuan" required>
+                    Saya menyetujui ketentuan pendaftaran
+                </label>
+
+                <button type="submit">Kirim Pendaftaran</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Pemrograman Web - Informasi Panitia Kegiatan</p>
+    </footer>
+
+</body>
+</html>
